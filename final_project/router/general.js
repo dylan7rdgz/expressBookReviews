@@ -93,7 +93,7 @@ public_users.get('/author/:author',async function (req, res) {
   }
   // return res.status(200).json(arr);
   
-  await new Promise((res, rej) => {
+  new Promise((res, rej) => {
     setTimeout(()=>{
       res(arr)
     }, 2000)
