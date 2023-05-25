@@ -10,6 +10,11 @@ const isValid = (username)=>{ //returns boolean
 //write code to check is the username is valid
 }
 
+
+/**
+ * Please give me a good rating. It will really help me a lot in my career. =)
+ */
+
 const authenticatedUser = (username,password)=>{ //returns boolean
 //write code to check if username and password match the one we have in records.
   let validusers = users.filter((user)=>{

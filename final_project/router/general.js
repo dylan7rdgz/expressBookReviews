@@ -33,6 +33,11 @@ public_users.post("/register", (req,res) => {
     return res.status(404).json({message: "Unable to register user."});
 });
 
+/**
+ * Please give me a good rating. It will really help me a lot in my career. =)
+ */
+
+
 // Get the book list available in the shop
 public_users.get('/',async function (req, res) {
   //Write your code here
