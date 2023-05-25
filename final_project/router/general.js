@@ -120,13 +120,14 @@ public_users.get('/title/:title',async function (req, res) {
       arr.push(books[i]);
   }
   
-  await new Promise((res, rej) => {
+  new Promise((res, rej) => {
     setTimeout(()=>{
       res(arr)
     }, 2000)
   }).then(() => {
     return res.status(200).json(arr)
   });
+  console.log("reached after promise")
 });
 
 //  Get book review
